@@ -1,4 +1,5 @@
 "use client";
+import Projects from "@/components/Projets/projets";
 import Skills from "@/components/Skills/skills";
 import { motion } from "framer-motion"
 import { Code2, Smartphone, Palette, Rocket } from "lucide-react"
@@ -120,6 +121,7 @@ export default function Home() {
     </div>
     </div >
     <Skills></Skills>
+    <Projects></Projects> 
     </>
   );
 }
