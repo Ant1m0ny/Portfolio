@@ -1,6 +1,8 @@
 "use client";
 import Projects from "@/components/Projets/projets";
 import Skills from "@/components/Skills/skills";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import { motion } from "framer-motion"
 import { Code2, Smartphone, Palette, Rocket } from "lucide-react"
 
@@ -44,6 +46,7 @@ export default function Home() {
       opacity: 1,
       y: 0,
       transition: {
+      
         type: "spring",
         stiffness: 100,
       },
@@ -122,6 +125,8 @@ export default function Home() {
     </div >
     <Skills></Skills>
     <Projects></Projects> 
+    <Contact></Contact>
+    <Footer></Footer>
     </>
   );
 }
