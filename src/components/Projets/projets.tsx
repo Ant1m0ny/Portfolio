@@ -2,34 +2,22 @@
 
 
 import { motion } from "framer-motion";
-import { Rocket, PlaneTakeoff, Star } from "lucide-react"
+import { Rocket, House, Star } from "lucide-react"
 
 const Projects = () => {
     const projects = [
         {
-            icon: <Rocket className="w-8 h-8" />,
-            title: "SpaceX Launch Tracker",
-            description: "A real time Dashboard for Tracking Space X launches and statistics ",
-            link: "#Space_tracker"
-        },
-        {
-            icon: <PlaneTakeoff className="w-8 h-8" />,
-            title: "Exo Planer Exeplorer",
-            description: "A real time Dashboard for Tracking Space X launches and statistics ",
-            link: "#Space_tracker"
+            icon: <House className="w-8 h-8" />,
+            title: "Kasa",
+            description: "Le projet Kasa est une application de location d’appartements développée avec React. Il répond aux contraintes d’interactivité et de performance, en utilisant le rendu côté client et la gestion dynamique des données. Les compétences utilisées incluent la création de composants réutilisables, la gestion d'état avec React et l'intégration d'API pour récupérer les informations des logements, tout en assurant une expérience utilisateur fluide et responsive",
+            image: "/images/Kasa_Projet.png"
         },
         {
             icon: <Star className="w-8 h-8" />,
-            title: "Micro services Explosion",
-            description: "A real time Dashboard for Tracking Space X launches and statistics ",
-            link: "#Space_tracker"
+            title: "Mon vieux grimoire",
+            description: "Le Vieux Grimoire est un projet back-end où j'ai développé un serveur avec Express et MongoDB. Les principaux défis étaient la gestion des opérations CRUD, l’authentification sécurisée des utilisateurs et l’optimisation des images. J'ai utilisé Mongoose, respecté l’architecture MVC et appliqué les bonnes pratiques du Green Code. Ce projet a renforcé mes compétences en Node.js, Express, MongoDB et en création d'API RESTful",
+            image: "/images/MVG_Projet.png"
         },
-        {
-            icon: <Star className="w-8 h-8" />,
-            title: "Docker & Kubernetes",
-            description: "A real time Dashboard for Tracking Space X launches and statistics ",
-            link: "#Space_tracker"
-        }
     ]
 
     const containerVariants = {
@@ -53,7 +41,7 @@ const Projects = () => {
         }
     }
     return (
-        <div className="min-h-screen p-8 bg-gradient-to-br from-gray-900 to-indigo-900 overflow-hidden relative">
+        <div id="projets" className="min-h-screen p-8 bg-gradient-to-br from-gray-900 to-indigo-900 overflow-hidden relative">
 
             {[...Array(50)].map((_, i) => {
                 return (
@@ -91,12 +79,12 @@ const Projects = () => {
                     <motion.span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-purple-200 bg-purple-800 rounded-full"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }} >
-                        Realised Projects
+                        Projets réalisés
 
 
 
                     </motion.span>
-                    <h2 className="text-4xl font-bold text-white md:text-5xl">My Creations</h2>
+                    <h2 className="text-4xl font-bold text-white md:text-5xl">Mes projets</h2>
 
                 </motion.div>
                 <motion.div
@@ -114,6 +102,7 @@ const Projects = () => {
                                 whileHover={{ scale: 1.05 }}
                                 className="p-6 transition-all duration-300 bg-white/10 backdrop-blur-lg rounded-xl hover:bg-white/15 hover:shadow-xl group"
                             >
+                                <img src={project.image} alt={project.title} className="mb-4" />
                                 <motion.div
                                     initial={{ rotate: 0 }}
                                     whileHover={{ rotate: 360, scale: 1.2 }}
@@ -129,16 +118,6 @@ const Projects = () => {
                                 <p className="mb-4 text-purple-200 group-hover:text-white transition-colors">
                                     {project.description}
                                 </p>
-                                <motion.a
-                                    href={project.link}
-                                    className='inline-block px-4 py-2 text-sm font-medium text-white transition-colors bg-purple-700 rounded-full hover:bg-purple-600 '
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    Explore For more
-
-                                </motion.a>
-
                             </motion.div>
                         )
                     })}
@@ -150,17 +129,6 @@ const Projects = () => {
                     transition={{ delay: 0.5, duration: 0.5 }}
                     className='mt-12 text-center'
                 >
-
-                <motion.a
-                            href="#all-projects"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center px-8 py-3 text-lg font-semibold text-white transition-colors bg-indigo-600 rounded-full hover:bg-indigo-700"
-                        >
-                             <span>Voir Tous les Projets</span>
-                             <Rocket className="w-5 h-5 ml-2"/>
-                </motion.a>
-
                 </motion.div>
             </div>
 

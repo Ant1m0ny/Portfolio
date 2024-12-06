@@ -10,7 +10,6 @@ const Contact = () => {
     const [isSubmited, setIsSubmited] = useState(false);
 
     const ContactInfo = [
-        { icon: <Phone className="w-5 h-5" />, text: '+336 759 569 76' },
         { icon: <Mail className="w-5 h-5" />, text: "camille.gaudillot@gmail.com" },
         { icon: <MapPin className="w-5 h-5" />, text: "France , Lyon" }
     ]
@@ -20,7 +19,7 @@ const Contact = () => {
         setTimeout(() => setIsSubmited(false), 5000);
     }
     return (
-        <div className="min-h-screen p-8 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 flex items-center justify-center">
+        <div id="contact" className="min-h-screen p-8 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 flex items-center justify-center">
 
             <div className='w-full max-w-4xl bg-black/30 backdrop-blur-lg rounded-3xl overflow-hidden shadow-xl '>
 
@@ -35,7 +34,7 @@ const Contact = () => {
                     >
 
                         <h2 className="text-3xl font-bold text-white mb-4" >Contactez-moi</h2>
-                        <p className='text-blue-200 mb-6'>Pret à lancer votre Projet vers Nouveaux horizons ? Contactez moi pour une meilleure consuslation gratuite !</p>
+                        <p className='text-blue-200 mb-6'>Transformez vos idées en projets web innovants et performants. Contactez-moi pour créer des solutions sur mesure qui répondent à vos besoin et offre à vos utilisateurs une expérience unique.</p>
                     </motion.div>
 
                     {ContactInfo.map((item, index) => {
@@ -89,20 +88,19 @@ const Contact = () => {
                             >
                                 <div className="">
                                     <label htmlFor="name" className="block text-sm font-medium text-blue-200"> Nom </label>
-                                    <Input id="name" name="name" placeholder="votre  nom" className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Input>
+                                    <Input required id="name" name="name" placeholder="Votre nom" className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Input>
                                 </div>
                                 <div className="">
                                     <label htmlFor="Email" className="block text-sm font-medium text-blue-200"> Email </label>
-                                    <Input id="Email" name="Email" placeholder="votre  Email@camille.com" className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Input>
+                                    <Input required id="Email" name="Email" placeholder="exemple@exemple.com" className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Input>
                                 </div>
                                 <div className="">
                                     <label htmlFor="message" className="block text-sm font-medium text-blue-200"> Message </label>
-                                    <Textarea id="message" rows={4} name="Email" placeholder="votre  message ici ..." className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Textarea>
+                                    <Textarea required id="message" rows={4} name="Email" placeholder="Votre message ici ..." className="mt-1  bg-white/5  border-blue-500/30 text-white placeholder-blue-300"></Textarea>
                                 </div>
                                 <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-full transition-colors duration-300">
                                     <Send className="w-5 h-5 mr-2" />
-                                    Send
-
+                                    Envoyer
                                 </Button>
 
 

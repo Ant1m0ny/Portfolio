@@ -8,18 +8,23 @@ const Skills = () => {
         {
             icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
             title: "React.Js",
-            description: "Experienced In creating dynamic and reactive web applications with React.js Focusing  on Client side rendering for optimal performance "
+            description: "Réalisation d'applications web dynamiques avec React.js, en privilégiant le rendu côté client pour une performance optimale "
         },
         {
             icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
-            title: "Tailwind Css",
-            description: "Proficient in using Tailwind Css to quickly design custom  and  responsive interfaces, ensuring a modern UI development based  utility classes ",
+            title: "HTML",
+            description: "Conception de structures web claires et accessibles avec HTML, en mettant l’accent sur une sémantique soignée pour optimiser la compatibilité et le référencement",
         },
         {
-            icon: <PythonIcon className="w-12 h-12 text-[#3776AB]"></PythonIcon>,
-            title: "Python",
-            description: "Mastery  Of  python programing for various applications , from web backend development to artificial  intelligence with a focus  on clean and automation",
-        }
+            icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
+            title: "CSS",
+            description: "Réalisation de designs web élégants et adaptatifs avec CSS, en utilisant des techniques de mise en page avancées et des animations pour améliorer l'interaction utilisateur",
+        },    
+        {
+            icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
+            title: "Javascript",
+            description: "Développer des fonctionnalités interactives et dynamiques, en optimisant la performance et l’expérience utilisateur grâce à des scripts performants",
+        },
     ]
 
     const containerVariants = {
@@ -47,7 +52,7 @@ const Skills = () => {
 
     return (
 
-        <div className="min-h-screen p-8 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900">
+        <div id="compétences" className="min-h-screen p-8 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900">
             <div className="max-w-6xl mx-auto">
 
                 <motion.div
@@ -64,7 +69,7 @@ const Skills = () => {
                         Compétences
                     </motion.span>
                     <h1 className="text-4xl font-bold text-white md:text-5xl">
-                        I love Working with ...
+                        Mes outils
                     </h1>
                 </motion.div>
                 <motion.div
