@@ -25,6 +25,16 @@ const Skills = () => {
             title: "Javascript",
             description: "Développer des fonctionnalités interactives et dynamiques, en optimisant la performance et l’expérience utilisateur grâce à des scripts performants",
         },
+        {
+            icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
+            title: "Veilles technologiques",
+            description: "Rester informé des dernières tendances et outils du développement web afin d'adopter les meilleures pratiques et d'intégrer les technologies les plus récentes dans ses projets.",
+        },
+        {
+            icon: <ReactIcon className="w-12 h-12 text-[#61DAFB]"></ReactIcon>,
+            title: "Intégration et gestion d'APIs",
+            description: "Intégration d'APIs RESTful pour connecter des services externes et enrichir les fonctionnalités des applications web, assurant ainsi des échanges de données fluides et efficaces"
+        }
     ]
 
     const containerVariants = {

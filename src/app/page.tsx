@@ -21,9 +21,9 @@ export default function Home() {
       description: "Conception, optimisation et intégration de bases de données relationnelles SQL et NoSQL"
     },
     {
-      title: "Intégration API",
+      title: "Design web",
       icon: <Palette className="w-8 h-8" />,
-      description: "Compétence dans l'intégration d'APIs RESTful pour connecter des services externes et enrichir les fonctionnalités des applications"
+      description: "Création d'interfaces esthétiques et fonctionnelles, offrant une expérience utilisateur fluide et intuitive"
     },
     {
       title: "Optimisation des Performances",
