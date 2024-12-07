@@ -144,7 +144,7 @@ const Header = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-lg text-blue-200 mb-8 max-w-2xl"
                         >
-                            Concevoir des solutions web complètes et interactives en alliant React, intégration d'APIs, gestion de bases de données et design intuitif.
+                            Concevoir des solutions web complètes et interactives en alliant React, intégration d&apos;APIs, gestion de bases de données et design intuitif.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
