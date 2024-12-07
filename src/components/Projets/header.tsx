@@ -136,7 +136,7 @@ const Header = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-2xl md:text-3xl text-purple-300 mb-6"
                         >
-                            Développeuse Web Créative
+                            Développeuse Web Full-stack
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -144,7 +144,7 @@ const Header = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-lg text-blue-200 mb-8 max-w-2xl"
                         >
-                            Concevoir des solutions web complètes et interactives en alliant React, intégration d&apos;APIs, gestion de bases de données et design intuitif.
+                            Dans le cadre de ma formation Bac +2 en développement web et conception numérique, dispensée par OpenClassrooms, j'ai acquis des compétences solides dans le domaine de la création et de la gestion de sites web ainsi que dans le développement d'applications interactives. Cette formation, à la fois théorique et pratique, m'a permis de maîtriser les langages de programmation tels que HTML, CSS, JavaScript, ainsi que des outils de développement modernes comme Git et les systèmes de gestion de contenu.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
