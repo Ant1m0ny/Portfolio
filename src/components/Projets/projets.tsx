@@ -2,7 +2,9 @@
 
 
 import { motion } from "framer-motion";
-import { Rocket, House, Star } from "lucide-react"
+import { House, Star } from "lucide-react";
+import Image from "next/image";
+
 
 const Projects = () => {
     const projects = [
@@ -102,7 +104,8 @@ const Projects = () => {
                                 whileHover={{ scale: 1.05 }}
                                 className="p-6 transition-all duration-300 bg-white/10 backdrop-blur-lg rounded-xl hover:bg-white/15 hover:shadow-xl group"
                             >
-                                <img src={project.image} alt={project.title} className="mb-4" />
+                                <Image src={project.image} alt={project.title} className="mb-4" layout="responsive" width={500} height={300} />
+
                                 <motion.div
                                     initial={{ rotate: 0 }}
                                     whileHover={{ rotate: 360, scale: 1.2 }}

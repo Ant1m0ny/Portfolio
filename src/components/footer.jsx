@@ -1,13 +1,12 @@
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
-import { Github, Linkedin, Twitter, Sun, Moon } from "lucide-react";
-import { Button } from "./ui/button";
+import { Github, Linkedin, Sun, Moon } from "lucide-react";
 
 
 const Footer = () => {
-    const [CurrentTime, setCurrentTime] = useState(new Date());
-    const [isDayTime, setIsDayTime] = useState(true);
+    const [CurrentTime] = useState(new Date());
+    const [isDayTime] = useState(true);
 
     const socialLinks = [
         { icon: <Github className="w-5 h-5" />, href: "https://github.com/Ant1m0ny" },

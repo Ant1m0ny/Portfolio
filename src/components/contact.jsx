@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, Send, Phone, Mail, MapPin } from 'lucide-react'
+import { Sparkles, Send, Mail, MapPin } from 'lucide-react'
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";

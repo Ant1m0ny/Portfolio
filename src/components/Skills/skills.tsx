@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { CodepenIcon as ReactIcon, PiIcon as PythonIcon } from "lucide-react";
+import { CodepenIcon as ReactIcon } from "lucide-react";
 
 
 const Skills = () => {

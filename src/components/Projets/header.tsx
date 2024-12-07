@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { Menu } from "lucide-react"
-import { motion, useAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 import { Button } from '../ui/button';
 import {
     DropdownMenu,
@@ -99,9 +99,10 @@ const Header = () => {
 
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align='end' className='w-52 bg-black/50 backdrop-blur-md  border-purple-500' >
-                            {NavItems.map((item) => {
+                            {NavItems.map((item, index) => {
                                 return (
-                                    <DropdownMenuItem className="text-white hover:text-purple-300 focus:text-purple-300 focus:bg-white/10">
+                            
+                                    <DropdownMenuItem key={index}  className="text-white hover:text-purple-300 focus:text-purple-300 focus:bg-white/10">
 
                                         <a>{item}</a>
                                     </DropdownMenuItem>
