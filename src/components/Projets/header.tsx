@@ -144,7 +144,7 @@ const Header = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-lg text-blue-200 mb-8 max-w-2xl"
                         >
-                            Dans le cadre de ma formation Bac +2 en développement web et conception numérique, dispensée par OpenClassrooms, j'ai acquis des compétences solides dans le domaine de la création et de la gestion de sites web ainsi que dans le développement d'applications interactives. Cette formation, à la fois théorique et pratique, m'a permis de maîtriser les langages de programmation tels que HTML, CSS, JavaScript, ainsi que des outils de développement modernes comme Git et les systèmes de gestion de contenu.
+                            Dans le cadre de ma formation Bac +2 en développement web et conception numérique, dispensée par OpenClassrooms, j'ai acquis des compétences en HTML, CSS, JavaScript, ainsi qu'en gestion de projet et en développement d'applications web. Grâce à une approche pratique et des projets concrets, j'ai pu développer des sites web responsive et des interfaces utilisateur fonctionnelles. Cette formation m'a permis de renforcer mon autonomie, ma capacité à résoudre des problèmes techniques et à collaborer efficacement dans un environnement professionnel.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
