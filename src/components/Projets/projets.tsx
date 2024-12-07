@@ -42,6 +42,8 @@ const Projects = () => {
             }
         }
     }
+    
+
     return (
         <div id="projets" className="min-h-screen p-8 bg-gradient-to-br from-gray-900 to-indigo-900 overflow-hidden relative">
 
@@ -51,8 +53,8 @@ const Projects = () => {
                         key={i}
                         className="absolute w-1 h-1 bg-white rounded-full"
                         initial={{
-                            x: Math.random() * window.innerWidth,
-                            y: Math.random() * window.innerHeight,
+                            x: Math.random() * 100 + "vw",
+                            y: Math.random() * 100 + "vh",
                             scale: Math.random() * 0.5 + 0.5,
                         }}
                         animate={{

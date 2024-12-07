@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, Linkedin, Sun, Moon } from "lucide-react";
+import { useEffect } from 'react';
 
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
                     key={i}
                     className="absolute w-1 h-1 bg-white rounded-full"
                     initial={{
-                        x: Math.random() * window.innerWidth,
+                        x: Math.random() * 100 + "vw",
                         y: Math.random() * 200,
                         scale: Math.random() * 0.5 + 0.5,
                     }}
